@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navya Portfolio</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.js">
+</head>
+<body>
+
+    
+<!-- header section starts here -->
+<header>
+    <div class="user">
+        <img src="images/pic.jpg" alt="">
+        <h3 class="name">Navya Teja</h3>
+        <!-- <p class="post">front end developer</p> -->
+    </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <!-- <li><a href="#achievements">Achievements</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- header section ends here -->
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!--  home section starts here    -->
+<section class="home" id="home">
+    <h3>HI THERE !</h3>
+    <h1>I'M <span>D.Navya Teja</span></h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus laborum illo, dolorem 
+        laboriosam, excepturi eveniet esse sunt, odio qui tenetur ea officia eligendi. 
+        Ipsum provident eum quod magnam! Quasi, sequi. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <a href="images/Navya Teja.pdf" download class="btn btn2">Download CV</a>
+        <a href="#about"><button class="btn">About Me <i class="fas fa-user"></i></button></a>
+</section>
+<!--  home section ends here    -->
+
+<!--    about section starts here  -->
+<section class="about" id="about">
+    <div class="row"></div>
+    <h1 class="heading"> <span>About</span> Me </h1>
+    <div class="sub-title">
+        <p>I am D Navya Teja. I am flexible, reliable and possess excellent time keeping skills. 
+        I am an enthusiastic, self-motivated, reliable, responsible and hard working person. </p> 
+    </div>               
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('Technical Skills')">Technical Skills</p>
+        <p class="tab-links" onclick="opentab('Professional Skills')">Professional Skills</p>
+        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+    </div>
+    <div class="tab-contents active-tab" id="Technical Skills">
+        <ul>
+            <li><span>Technical Skills</span><br>C, Java, Python, MS Office, MS Excel, Salesforce(Admin, Apex, LWC)</li>
+            <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+            <li><span>Version Control</span><br>Git, Visual Studio Code</li>
+            <li><span>Database Management</span><br>SQL</li>
+            <li><span>Operating Systems</span><br>Windows, Ubuntu, Linux</li>
+        </ul>
+    </div>
+    <div class="tab-contents" id="Professional Skills">
+        <ul>
+            <li>Problem - Solving</li>
+            <li>Critical Thinking</li>
+            <li>Teamwork and Collaborative</li>
+            <li>Attention to detail</li>
+            <li>Leadership</li>
+            <li>Adaptability</li>
+            <li>Creativity</li>
+            <li>Time Management</li>
+          </ul>
+    </div>
+    <div class="tab-contents" id="experience">
+        <ul>
+            <li><span>July 2023 - September 2023</span><br>Analyst trainee<br>Deloitte<br>
+            <p>Underwent salesforce specific training for three months, where I have gained the basic knowledge on<br> 
+                - Administrative Essentials for new Admins,<br>
+                - Declarative Development for Platform App Builders and <br>
+                - Building Application Programmatically using Apex & LWC</p></li>
+           <!-- <li><span>2019-2021</span><br>Team Lead at StarApp LLC.</li>
+            <li><span>2017-2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+            <li><span>2016-2017</span><br>Internship at ekart eCommerce.</li> -->
+        </ul>
+    </div>
+    <div class="tab-contents" id="education">
+        <ul>
+            <li><span>2019-2023</span><br>B.Tech - Computer Science and Engineering
+                <br>Malla Reddy Engineering College For Women<br>CGPA : 8.61 / 10</li>
+            <li><span>2017-2019</span><br>Intermediate<br>Narayana Junior College<br>CGPA : 9.04 / 10</li>
+            <li><span>2017</span><br>SSC<br>Narayana EM School<br>CGPA : 9.8 / 10</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+
+var sidemeu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemeu.style.right = "0";
+}
+function closemenu(){
+    sidemeu.style.right = "-200px";
+}
+
+</script>
+ <!--     about section ends here -->
+
+ <!-- Projects section starts here -->
+<section class="projects" id="projects">
+    <h1 class="heading"><span>Projects</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <p><span>Hobnob</span><br><br>Identification of hand sign language and 
+                conversion to text and audio.<br><br><span>Skills used : </span>Python, Deep Learning, ML, OpenCV</p>
+        </div>
+        <div class="box">
+            <p><span>Detection of Illicit Content Using NLP & ML</span><br><br>
+                Detecting the illicit texts and images in twitter app using NLP & SVM.
+                <br><br><span>Skills used : </span>Python, HTML, CSS, JavaScript, ML, NLP, MySQL</p>
+        </div>
+        <div class="box">
+            <p><span>Vitasi - A real time Contactless Vital Signs Estimation System</span><br><br>
+                The non-contact monitoring of vital signs like heart rate and breathe rate using PVMP & CNN.
+                <br><br><span>Skills used : </span>Python, HTML, CSS, JavaScript, MySQL</p>
+        </div>
+        <div class="box">
+            <p><span>Membership Inference Attack and Defense for Wireless Signal Classifiers Using 
+                Deep Learning</span><br><br>Identifying fake signals and providing defense mechanism.
+                <br><br><span>Skills used : </span>Python, HTML, CSS, JavaScript, Django, Deep Learning</p>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- Projects section ends here -->
+
+<!-- Achievements section starts here 
+<section class="achievements" id="achievements">
+    <h1 class="heading"><span>Achievements</span></h1>
+    <div class="a-container">
+        <div class="cert">
+            <p><span>Hobnob</span><br><br>Identification of hand sign language and 
+                conversion to text and audio.<br><br><span>Skills used : </span>Python, Deep Learning, ML, OpenCV</p>
+        </div>
+        <div class="cert">
+            <p><span>Detection of Illicit Content Using NLP & ML</span><br><br>
+                Detecting the illicit texts and images in twitter app using NLP & SVM.
+                <br><br><span>Skills used : </span>Python, HTML, CSS, JavaScript, ML, NLP, MySQL</p>
+        </div>
+        <div class="cert">
+            <p><span>Vitasi - A real time Contactless Vital Signs Estimation System</span><br><br>
+                The non-contact monitoring of vital signs like heart rate and breathe rate using PVMP & CNN.
+                <br><br><span>Skills used : </span>Python, HTML, CSS, JavaScript, MySQL</p>
+        </div>
+        <div class="cert">
+            <p><span>Membership Inference Attack and Defense for Wireless Signal Classifiers Using 
+                Deep Learning</span><br><br>Identifying fake signals and providing defense mechanism.
+                <br><br><span>Skills used : </span>Python, HTML, CSS, JavaScript, Django, Deep Learning</p>
+        </div>
+    </div>
+</section> -->
+<!--achievements section ends here -->
+
+<!-- Contact section startss here -->
+<section class="contact" id="contact">
+    <h1 class="heading"> <span>Contact</span> Me </h1>
+    <div class="row">
+        <div class="content">
+            <h3 class="title">Contact info</h3>
+            <div class="info">
+                <h3> <i class="fas fa-envelope"></i> navyateja1901@gmail.com </h3>
+                <h3> <i class="fas fa-phone"></i> 9390066983 </h3>
+                <h3> <i class="fas fa-map-marker-alt"></i> Guntur, Andhra Pradesh - 522006 </h3>
+            </div>
+        </div>
+
+        <form action="">
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="text" placeholder="project" class="box">
+            <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+            <button type="submit" class="btn"> Send <i class="fas fa-paper-plane"></i> </button>
+        </form>
+    </div>
+</section>
+<!-- Contact section ends here -->
+
+<!--  Scroll top button starts here  -->
+<a href="#home" class="top">
+    <!-- <img src="images/image1.jpeg" alt=""> -->
+</a>
+<!--   Scroll top button ends here  -->
+
+
+
+<!-- jquery cdn link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
