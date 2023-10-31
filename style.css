@@ -179,8 +179,8 @@ header .navbar ul li a:hover{
 /*  home section ends here */
 /*   about section starts here */
 #about{         
-    font-size: 16px;                      /* year description size */   
-    padding: 2rem 0;
+    font-size: 12px;                      /* year description size */   
+    padding: 1rem 0;
     color: var(--yellow);
 }
 
@@ -193,21 +193,22 @@ header .navbar ul li a:hover{
 }
 
 .sub-title{
-    font-size: 2rem;
+    font-size: 14px;
     color: #eee;
     padding: 2rem 0;
-    margin-left: 60px;
+    margin-left: 80px;
+    margin-right: 60px;
 } 
 
 .tab-titles{
     display: flex;
     margin: 20px 0;
-    margin-left: 60px;
+    margin-left: 80px;
     justify-content: center;            /* skills edu exp will come to centre */
 }
 .tab-links{
     margin-right: 80px;                    /* space b/w skills exp edu */
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -238,7 +239,7 @@ header .navbar ul li a:hover{
 }
 .tab-contents.active-tab{
     display: block;
-    margin-left: 245px;                      /* contents moves 60px from margin */
+    margin-left: 300px;                      /* contents moves 60px from margin */
     color: #fff;
 }
 /*   about section ends here */
@@ -248,20 +249,19 @@ header .navbar ul li a:hover{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 3rem 0;
+    padding: 1rem 0;
 }
 .projects .box-container .box{
-    height: 20rem;
+    height: 10rem;
     width: 50rem;
-    border-radius: 1rem;
     margin: 5rem;
     overflow: hidden;
     cursor: pointer;
     color: #fff;
-    font-size: 14px;
+    font-size: 10px;
 }
 .projects .box-container .box span{
-    font-size: 16px;
+    font-size: 14px;
     color: var(--yellow);
     margin-left: 0;
 }
@@ -336,9 +336,9 @@ header .navbar ul li a:hover{
 
 .contact .row form{
     flex: 1 1 45rem;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    margin-bottom: 4rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
 }
 
 .contact .row form .box{
@@ -347,7 +347,7 @@ header .navbar ul li a:hover{
     background: #3333;
     color: #fff;
     text-transform: none;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     width: 100%;
 }
 
@@ -356,7 +356,7 @@ header .navbar ul li a:hover{
 }
 
 .contact .row form .message{
-    height: 15rem;
+    height: 8rem;
     resize: none;
 
 }
@@ -364,7 +364,7 @@ header .navbar ul li a:hover{
 .contact .row .content .title{
     text-transform: uppercase;
     color: #fff;
-    font-size: 3rem;
+    font-size: 18px;
     padding-bottom: 2rem;
 }
 
@@ -372,7 +372,7 @@ header .navbar ul li a:hover{
     display: flex;
     text-transform: none;
     align-items: center;
-    font-size: 2rem;
+    font-size: 16px;
     color: #eee;
     padding: 1rem 0;
     font-weight: normal;
